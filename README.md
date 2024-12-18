@@ -1,6 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [
 `create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## 画面イメージ
+
+<img width="574" alt="image" src="https://github.com/user-attachments/assets/1fcc69dc-9971-4625-8dba-fb2318ca887c" />
+
+
 ## 始め方
 
 ### 必要なツール
