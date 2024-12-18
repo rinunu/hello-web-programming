@@ -1,0 +1,18 @@
+name: hello_web_programming
+
+services:
+  db:
+    image: postgres
+    restart: always
+
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: main_local
+    ports:
+      - 5435:5432
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:

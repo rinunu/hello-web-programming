@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [
+`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## 始め方
 
-First, run the development server:
+### 必要なツール
+
+- [Docker](https://www.docker.com/)
+- Node.js (例: [Volta](https://volta.sh/))
+- エディタ (例: [PyCharm](https://www.jetbrains.com/pycharm/))
+
+### コマンド
 
 ```bash
+# DB 起動
+docker compose up -d
+
+# DB の構造を変更
+npx prisma db push
+
+# フロントエンド・バックエンド立ち上げ
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000) を開く
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 当日お伝えしたいこと
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- コマンドラインからの操作
+- アプリの起動の仕方
+- ツールによる DB の覗き方
+- DB の変更の仕方
+- アプリ画面の編集の仕方
+- API の追加の仕方
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+上記を実現するために
+- AI とユーザーのメッセージで見た目を変えてみる
+- メッセージの削除機能を追加してみる
