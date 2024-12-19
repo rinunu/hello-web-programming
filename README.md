@@ -17,6 +17,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [
 ### コマンド
 
 ```bash
+# ライブラリインストール
+npm install
+
 # DB 起動
 docker compose up -d
 
